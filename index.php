@@ -168,19 +168,21 @@
 </div>
 
   <script>
-scr
-   type="text/javascript">
-    function display(form) {
-        if (form.username.value == "Ainazik") {
-            if (form.password.value == "12345") {
-                location = "ainazik.php"
-            } else {
-                alert("Invalid Password")
-            }
-        } else {
-            alert("Invalid Username")
-        }
+data = {
+    user: "abdu",
+    pass: "2005",
+}
+
+let accept = () =>{
+    let userName = document.getElementById('user').value
+    let password = document.getElementById('pass').value
+    if (data.user == userName && data.pass == password) {
+        window.location.href = 'https://timati04.herokuapp.com/'
+    }else{
+        alert("invalid password, try again later")
     }
+  
+}
     
   </script>
 </body>
